@@ -1,0 +1,62 @@
+// Define global styles and variables
+:root {
+  --font-primary: "Inter", Arial, sans-serif;
+  --text-color: #333;
+  --heading-size: clamp(2rem, 4vw, 3rem);
+  --subheading-size: clamp(1.5rem, 3vw, 2rem);
+  --body-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-color);
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 2vw;
+  width: 100vw;
+  height: 100vh;
+
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .tittle {
+      font-size: var(--heading-size);
+      font-weight: 700;
+      margin: 1rem 0;
+    }
+
+    .subtitle {
+      font-size: var(--subheading-size);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .intro {
+      font-size: var(--body-size);
+      color: #555;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  hr {
+    margin: 2rem auto;
+    width: 80%;
+    border: 1px solid #ddd;
+  }
+
+  #about,
+  #Skills,
+  #Projects,
+  #contact {
+    padding: 2rem;
+  }
+}
