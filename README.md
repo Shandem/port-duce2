@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+## this id the current active portfolio
+
+i had to copy and remake the application using create-react-app because of the dependicsy that where in the last [pacjage where  out of date and couldnt be fix. this should bring me up to date  with the assistance of chatGPT
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
