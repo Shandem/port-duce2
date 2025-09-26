@@ -4,9 +4,6 @@ export default function aboutMe() {
   return (
     <section className="aboutMe">
       <div className="photoContainer">
-        <a href="https://picsum.photos/200/300" className="me">
-          this is the photo
-        </a>
         <t3 className="aboutTitle">Joshuah Joel Buan-Gutierrez</t3>
       </div>
       <p className="aboutBlurb">

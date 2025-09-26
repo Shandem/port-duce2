@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react";
-import './navbar.scss'
+import "./navbar.scss";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ export default function Navbar() {
     { id: "contact", text: "Contact" },
   ];
 
-function NavLink({ id, text, onClick }) {
+  function NavLink({ id, text, onClick }) {
     return (
       <Link
         to={id}
@@ -31,8 +31,14 @@ function NavLink({ id, text, onClick }) {
     <nav className="fixed top-0 left-0 w-full bg-gray-800 text-white shadow-md z-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <div className="text-xl font-bold">Logo</div>
-          <div className="hidden md:flex space-x-6">
+          <div class="watermarked"> </div>
+          <img
+            src={process.env.PUBLIC_URL + "/logo-clear-circ-large.png"}
+            className="navbar-logo"
+            alt="Logo of the developers innitals  J ands G "
+          />
+
+          <div className="hidden md:flex space-x-6 navContainer ">
             {navLinks.map((link) => (
               <NavLink key={link.id} {...link} />
             ))}
@@ -52,6 +58,3 @@ function NavLink({ id, text, onClick }) {
     </nav>
   );
 }
-
-
-
